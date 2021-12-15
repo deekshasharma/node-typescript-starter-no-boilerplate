@@ -2,5 +2,5 @@
   "watch": ["src"],
   "ext": ".ts,.js",
   "ignore": [],
-  "exec": "ts-node --project tsconfig.json ./src/index.ts"
+  "exec": "DEBUG=express:*,http:* ts-node --project tsconfig.json ./src/index.ts"
 }
