@@ -55,7 +55,7 @@
     "winston": "^3.3.3"
   },
   "lint-staged": {
-    "src/*.{js, ts}": [
+    "src/*.{js,ts}": [
       "npm run lint",
       "npm run prettify"
     ]
