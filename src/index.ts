@@ -5,7 +5,7 @@ const app = express();
 const log: debug.IDebugger = debug('http:debugger');
 
 app.get('/', (req, res) => {
-  console.log('dgjwehe');
+  console.log('dgjw,wejlfkwekjehe');
   res.send('Hello there, how are you?');
 });
 
