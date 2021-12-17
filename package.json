@@ -10,7 +10,8 @@
     "lint": "eslint . --ext .ts --quiet --fix",
     "build": "rimraf dist && tsc",
     "start": "npm run build && node dist/index.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettify": "prettier --config .prettierrc 'src/**/*.ts' --write"
   },
   "keywords": [],
   "author": "deekshasharma",
@@ -33,6 +34,7 @@
     "jest": "^27.4.5",
     "lint-staged": "^12.1.2",
     "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "source-map-support": "^0.5.21",
     "ts-jest": "^27.1.1",
