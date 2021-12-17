@@ -10,8 +10,8 @@
     "lint": "eslint . --ext .ts --quiet --fix",
     "build": "rimraf dist && tsc",
     "start": "npm run build && node dist/index.js",
-    "prepare": "husky install",
-    "prettify": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "prettify": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "deekshasharma",
@@ -32,7 +32,6 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-no-loops": "^0.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "husky": "^7.0.0",
     "jest": "^27.4.5",
     "lint-staged": "^12.1.2",
     "nodemon": "^2.0.15",
@@ -42,7 +41,8 @@
     "ts-jest": "^27.1.1",
     "ts-node": "^10.4.0",
     "tslib": "^2.3.1",
-    "typescript": "^4.5.3"
+    "typescript": "^4.5.3",
+    "husky": "^7.0.0"
   },
   "dependencies": {
     "async": "^3.2.2",
