@@ -6,6 +6,7 @@ const log: debug.IDebugger = debug('http:debugger');
 
 app.get('/', (req, res) => {
     console.log('Hello world!');
+    console.log('Hello world!');
 
     for (let i = 0; i < 12; i++) {
         console.log(i);

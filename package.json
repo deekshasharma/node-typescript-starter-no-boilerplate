@@ -29,8 +29,9 @@
     "concurrently": "^6.4.0",
     "eslint": "^8.4.1",
     "eslint-plugin-no-loops": "^0.3.0",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "jest": "^27.4.5",
+    "lint-staged": "^12.1.2",
     "nodemon": "^2.0.15",
     "rimraf": "^3.0.2",
     "source-map-support": "^0.5.21",
@@ -48,5 +49,10 @@
     "express-winston": "^4.2.0",
     "lodash": "^4.17.21",
     "winston": "^3.3.3"
+  },
+  "lint-staged": {
+    "**/*.{js, ts}": [
+      "npm run lint"
+    ]
   }
 }
