@@ -5,8 +5,8 @@ const app = express();
 const log: debug.IDebugger = debug('http:debugger');
 
 app.get('/', (req, res) => {
-  console.log('dgjw,  wedwewejlfkwqwdwefeekjehe');
-  res.send('Hello there, how are you?');
+  // console.log('dgjw,  wedwewejlfkwqwdwefeekjehe');
+        res.send('Hello there, how are you?')
 });
 
 app.listen(3400, () => log('Your application is running on port 3400'));
