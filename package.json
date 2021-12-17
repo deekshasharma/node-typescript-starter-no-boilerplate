@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
@@ -28,6 +33,7 @@
     "concurrently": "^6.4.0",
     "eslint": "^8.4.1",
     "eslint-plugin-no-loops": "^0.3.0",
+    "husky": "^7.0.4",
     "jest": "^27.4.5",
     "nodemon": "^2.0.15",
     "rimraf": "^3.0.2",
