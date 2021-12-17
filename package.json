@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "deekshasharma",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/concurrently": "^6.4.0",
     "@types/cors": "^2.8.12",
