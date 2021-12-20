@@ -28,10 +28,10 @@ Since this project uses `nodemon` to automatically restart the application on fi
 }
 ```
 
-And the `package.json` `dev` script runs `nodemon` as shown below. 
+The `package.json` `dev` script runs `nodemon` as shown below. 
 
 ```shell
-"dev": "nodemon",
+"dev": "nodemon"
 ```
 
 ## How to add a plugin to my current `eslint` configuration?
@@ -44,13 +44,8 @@ Currently, in this project we have only 2 rules in our `.eslintrc` file.
 ## How to build the project for deployment?
 
 ## `console.log` is not allowed and throws lint errors. What to do?
-If the application using your module absolutely needs to log something important, then you can use `console`. To do so, remove the `no-console` rule from the `.eslintrc` file. But, if you don't, log everything using `debug`.
+If the application using your module absolutely needs to log something important, then you can use `console`. To do so, remove the `no-console` rule from the `.eslintrc` file. 
+If you don't necessarily need to use `console` then log everything using `debug`.
 **Note:** `debug` writes to stderr, not stdout, so if the logs are picked up based on different sources, then these debug logs will end up in the `stderr` stream.
-
-## Open questions | things to be done
-- How will the output directory be generated with the JS files?
-- Add Husky pre-commit hook for linting
-- Add prettify
-
 
 
